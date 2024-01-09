@@ -1,18 +1,18 @@
 <nav class="lg:h-[14vh] lg:w-[28vw] h-[10vh] bg-gray-950 rounded-3xl m-2 flex justify-around items-center">
     <div class="flex items-center justify-center">
-        <button class="hover:bg-emerald-500 rounded-xl lg:w-24 lg:h-24 w-[70px] h-[70px]">
+        <button id="homeButton" class="hover:bg-emerald-500 rounded-xl lg:w-24 lg:h-24 w-[70px] h-[70px]">
             <i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i>
             <p class="text-center text-white font-extralight text-sm mt-2">Home</p>
         </button>
     </div>
     <div class="flex items-center justify-center">
-        <button class="hover:bg-emerald-500 rounded-xl lg:w-24 lg:h-24 w-[70px] h-[70px]">
+        <button id="projectsButton" class="hover:bg-emerald-500 rounded-xl lg:w-24 lg:h-24 w-[70px] h-[70px]">
             <i class="fa-solid fa-code fa-2xl" style="color: #ffffff;"></i>
             <p class="text-center text-white font-extralight text-sm mt-2">Projects</p>
         </button>
     </div>
     <div class="flex items-center justify-center">
-        <button class="hover:bg-emerald-500 rounded-xl lg:w-24 lg:h-24 w-[70px] h-[70px]">
+        <button id="contactButton" class="hover:bg-emerald-500 rounded-xl lg:w-24 lg:h-24 w-[70px] h-[70px]">
             <i class="fa-solid fa-comment fa-2xl" style="color: #ffffff;"></i>
             <p class="text-center text-white font-extralight text-sm mt-2">Contact</p>
         </button>
@@ -21,3 +21,10 @@
 <nav class="xl:h-24 xl:w-24 bg-gray-950 rounded-full m-2 mr-8">
 
 </nav>
+
+<script>
+    function mostrarHome () {
+        console.log("Boton home pulsado");
+    }
+    document.getElementById("homeButton").addEventListener("click", mostrarHome);
+</script>
