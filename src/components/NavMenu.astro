@@ -1,6 +1,6 @@
 <nav class="lg:h-[14vh] lg:w-[28vw] h-[10vh] bg-gray-950 rounded-3xl m-2 flex justify-around items-center">
     <div class="flex items-center justify-center">
-        <button id="homeButton" class="hover:bg-emerald-500 rounded-xl lg:w-24 lg:h-24 w-[70px] h-[70px]">
+        <button id="homeButton" class="hover:bg-emerald-500 bg-emerald-500 rounded-xl lg:w-24 lg:h-24 w-[70px] h-[70px]">
             <i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i>
             <p class="text-center text-white font-extralight text-sm mt-2">Home</p>
         </button>
@@ -23,8 +23,75 @@
 </nav>
 
 <script>
+    var projects = document.getElementById("projects");
+    var home = document.getElementById("home") ;
+    var contact = document.getElementById("contact");
+    var projectsButton = document.getElementById("projectsButton");
+    var homeButton = document.getElementById("homeButton");
+    var contactButton = document.getElementById("contactButton");
+
     function mostrarHome () {
-        console.log("Boton home pulsado");
+
+        if(!projects.classList.contains("hidden")){
+            projects.classList.add("hidden");
+        }
+        if(!contact.classList.contains("hidden")){
+            contact.classList.add("hidden");
+        }
+        home.classList.remove("hidden");
+
+        if(projectsButton.classList.contains("bg-emerald-500")){
+            projectsButton.classList.remove("bg-emerald-500");
+        }
+        if(contactButton.classList.contains("bg-emerald-500")){
+            contactButton.classList.remove("bg-emerald-500");
+        }
+        if(!homeButton.classList.contains("bg-emerald-500")){
+            homeButton.classList.add("bg-emerald-500");
+        }
+        
+
+    }
+    function mostrarProjects () {
+        if(!home.classList.contains("hidden")){
+            home.classList.add("hidden");
+        }
+        if(!contact.classList.contains("hidden")){
+            contact.classList.add("hidden");
+        }
+        projects.classList.remove("hidden");
+
+        if(homeButton.classList.contains("bg-emerald-500")){
+            homeButton.classList.remove("bg-emerald-500");
+        }
+        if(contactButton.classList.contains("bg-emerald-500")){
+            contactButton.classList.remove("bg-emerald-500");
+        }
+        if(!projectsButton.classList.contains("bg-emerald-500")){
+            projectsButton.classList.add("bg-emerald-500");
+        }
+    }
+    function mostrarContact () {
+        if(!projects.classList.contains("hidden")){
+            projects.classList.add("hidden");
+        }
+        if(!home.classList.contains("hidden")){
+            home.classList.add("hidden");
+        }
+        contact.classList.remove("hidden");
+
+        if(projectsButton.classList.contains("bg-emerald-500")){
+            projectsButton.classList.remove("bg-emerald-500");
+        }
+        if(homeButton.classList.contains("bg-emerald-500")){
+            homeButton.classList.remove("bg-emerald-500");
+        }
+        if(!contactButton.classList.contains("bg-emerald-500")){
+            contactButton.classList.add("bg-emerald-500");
+        }
     }
     document.getElementById("homeButton").addEventListener("click", mostrarHome);
+    document.getElementById("projectsButton").addEventListener("click", mostrarProjects);
+    document.getElementById("contactButton").addEventListener("click", mostrarContact);
+
 </script>
