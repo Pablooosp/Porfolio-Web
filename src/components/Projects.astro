@@ -1,6 +1,8 @@
 ---
 const bingoLogo = "/images/BINGO.png"
 const bingoCaptura = "/images/BingoJSCapture.webp"
+const pokeLogo = "/"
+const pokeCaptura = "/images/Pokedex.webp"
 ---
 
 <div id="projects" class="hidden snap-y snap-mandatory h-full w-full overflow-y-scroll">
@@ -31,7 +33,33 @@ const bingoCaptura = "/images/BingoJSCapture.webp"
             <button class="bg-emerald-500 px-4 py-2 flex justify-center items-center text-white rounded-md border-2 border-solid border-emerald-700 m-4">Live demo <span class="text-4xl">🚀</span></button>
         </section>
     </div>
-    <div class="snap-start bg-teal-200 w-full h-full flex items-center justify-center text-4xl">2</div>
+    <div class="snap-start bg-teal-200 w-full h-full flex items-center justify-center text-4xl">
+        <section class="grid grid-cols-4 justify-center items-center mt-4">                
+            <div class="h-24 w-24">
+                <img class="w-full h-full scale-150" src={pokeLogo} alt="Bingo logo">
+            </div>
+            <p class="col-span-3 text-white font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo repudiandae modi aspernatur iste, repellendus accusamus possimus molestias alias quo reprehenderit facere voluptates molestiae ut aliquid debitis? Quis, eius quisquam.</p>
+        </section>
+        <section class="flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full mx-2">                    
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                    <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                    <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                    <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"/>
+                    <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/>
+                </svg>
+            </div>            
+            <div class="w-12 h-12 rounded-full mx-2 flex justify-center"><svg class="scale-125" viewBox="0 0 256 154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><defs><linearGradient x1="-2.778%" y1="32%" x2="100%" y2="67.556%" id="a"><stop stop-color="#2298BD" offset="0%"/><stop stop-color="#0ED7B5" offset="100%"/></linearGradient></defs><path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0ZM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8Z" fill="url(#a)"/></svg></div>
+            <div class="w-12 h-12 rounded-full mx-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052 1052"><path fill="#f0db4f" d="M0 0h1052v1052H0z"/><path d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z" fill="#323330"/></svg></div>
+        </section>            
+        <section class="mx-auto h-[200px] w-[375px] mt-4">
+            <img class="w-full h-full" src={pokeCaptura} alt="BingoCapture">
+        </section>            
+        <section class="flex justify-center items-center">
+            <button class="bg-emerald-500 px-4 py-2 flex justify-center items-center text-white rounded-md border-2 border-solid border-emerald-700 m-4">View code <span class="text-4xl">💻</span></button>
+            <button class="bg-emerald-500 px-4 py-2 flex justify-center items-center text-white rounded-md border-2 border-solid border-emerald-700 m-4">Live demo <span class="text-4xl">🚀</span></button>
+        </section>
+    </div>
     <div class="snap-start bg-cyan-200 w-full h-full flex items-center justify-center text-4xl">3</div>
 </div>
 
